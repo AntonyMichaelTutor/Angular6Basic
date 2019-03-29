@@ -1,0 +1,12 @@
+Choose your Gender 
+<input type="radio" value="0" #genderr name="gender" (click)="genderFunction(genderr.value)">Male
+<input type="radio" value="1" #gender name="gender" (click)="genderFunction(gender.value)">FeMale
+<div *ngIf="!maleFlag && !femaleFlag">
+  Choose your gender
+</div>
+<div *ngIf="maleFlag">
+  Male
+</div>
+<div *ngIf="femaleFlag">
+  Female
+</div>

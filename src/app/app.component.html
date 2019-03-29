@@ -1,26 +1,5 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div>
-  <h1>String Interpolation</h1>
-  <h1>
-    Welcome to {{title}}!
-  </h1>
-  <h1>Property Binding</h1>
-  <img src="{{imgURL}}"><br>
-  <h1>Event Binding</h1>
-  <input type="submit" (click)="showMsg()">
-  <h1>Sample Example</h1>
-  <select #bk (change)="backChange(bk)">
-    <option value="1">Img1</option>
-    <option value="2">Img2</option>
-  </select>
-  <h1>Before TwoWay Binding</h1>
-  <input typ="text" #txtValue (keyup)="printValue(txtValue.value)"> {{msg}}
-  <h1> Two Way binding using NGModule</h1>
-  <input type="text" placeholder="Life goal.." [(ngModel)]="goalText">
-<br><span>{{ goalText }}</span><br>
+<a routerLink="BasicExample">Basic Example</a>
+<a routerLink="NgIfExample">NgIf Example</a>
 
-
-  
-</div>
-
+<br>
 <router-outlet></router-outlet>
