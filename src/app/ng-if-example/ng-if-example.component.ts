@@ -8,20 +8,28 @@ import { Component, OnInit } from '@angular/core';
 export class NgIfExampleComponent implements OnInit {
 
   constructor() { }
-
+  loginFlag=false;
   maleFlag = false;
+  btnName = "Login"
   femaleFlag:boolean= false;
   ngOnInit() {
   }
   genderFunction(gender:number){
-    if(gender==1){
+    if(gender==2){
       this.femaleFlag = true;
       this.maleFlag = false;
-    }else if(gender==0){
+    }else if(gender==1){
       this.maleFlag = true;
       this.femaleFlag = false;
     }
     
+  }
+  loginFunction(){
+    this.loginFlag = !this.loginFlag;
+    if(this.loginFlag)
+      this.btnName = "Logout";
+    else
+      this.btnName = "Login"; 
   }
 
 }

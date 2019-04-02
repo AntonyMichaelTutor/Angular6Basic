@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { BasicComponentComponent } from './basic-component/basic-component.component';
 import { NgIfExampleComponent } from './ng-if-example/ng-if-example.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { NgSwitchComponent } from './ng-switch/ng-switch.component';
+import { NgForComponent } from './ng-for/ng-for.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BasicComponentComponent,
     NgIfExampleComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    NgSwitchComponent,
+    NgForComponent
   ],
   imports: [
     BrowserModule,

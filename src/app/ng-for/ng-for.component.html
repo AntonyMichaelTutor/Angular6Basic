@@ -1,0 +1,42 @@
+<ol>
+  <li *ngFor="let stu of students">{{stu.studentName}}</li>
+</ol>
+<table cellspacing="15px">
+  <tr>
+      <th>StudentID</th>
+      <th>StudentName</th>
+      <th>Gender</th>
+      <th>Age</th>
+      <th>Course</th>
+  </tr>
+  <tr *ngFor="let stu of students">
+    <td>{{stu.studentID}}</td>
+    <td>{{stu.studentName}}</td>
+    <td>{{stu.gender}}</td>
+    <td>{{stu.age}}</td>
+    <td>{{stu.course}}</td>
+  </tr>
+</table>
+
+<input type="checkbox" (click)="showDropDown()">Show<br>
+<select *ngIf="checkFlag">
+  <option *ngFor="let stu of students">{{stu.studentName}}</option>
+</select>
+
+<input type="text" placeholder="Search using name"><br>
+<table cellspacing="15px">
+    <tr>
+        <th>StudentID</th>
+        <th>StudentName</th>
+        <th>Gender</th>
+        <th>Age</th>
+        <th>Course</th>
+    </tr>
+    <tr *ngFor="let stu of students">
+      <td>{{stu.studentID}}</td>
+      <td>{{stu.studentName}}</td>
+      <td>{{stu.gender}}</td>
+      <td>{{stu.age}}</td>
+      <td>{{stu.course}}</td>
+    </tr>
+  </table>

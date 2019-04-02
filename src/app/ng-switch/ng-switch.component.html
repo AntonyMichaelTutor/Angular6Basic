@@ -1,0 +1,7 @@
+<input type="text" [(ngModel)]="person">
+<ul [ngSwitch]="person">
+  <li *ngSwitchCase="'Mohan'">Hello Mohan</li>
+  <li *ngSwitchCase="'Sohan'">Hello Sohan</li>
+  <li *ngSwitchCase="'Vijay'">Hello Vijay</li>
+  <li *ngSwitchDefault>Invalid user</li>
+</ul> 

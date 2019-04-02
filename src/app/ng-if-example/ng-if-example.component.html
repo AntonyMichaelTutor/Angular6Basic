@@ -1,6 +1,6 @@
 Choose your Gender 
-<input type="radio" value="0" #genderr name="gender" (click)="genderFunction(genderr.value)">Male
-<input type="radio" value="1" #gender name="gender" (click)="genderFunction(gender.value)">FeMale
+<input type="radio" value="1" #genderr name="gender" (click)="genderFunction(genderr.value)">Male
+<input type="radio" value="2" #gender name="gender" (click)="genderFunction(gender.value)">FeMale
 <div *ngIf="!maleFlag && !femaleFlag">
   Choose your gender
 </div>
@@ -10,3 +10,12 @@ Choose your Gender
 <div *ngIf="femaleFlag">
   Female
 </div>
+<h1>ngIf , Else</h1>
+<input type="button" [value]="btnName" (click)="loginFunction()">
+<div *ngIf="loginFlag;else SignUP">Welcome</div>
+<ng-template #SignUP>Please Login</ng-template>
+<h1>ngIf , then Else</h1>
+<input type="button" [value]="btnName" (click)="loginFunction()">
+<ng-container *ngIf="loginFlag;then loginShow;else LogoutShow"></ng-container>
+<ng-template #loginShow>Welcome User</ng-template>
+<ng-template #LogoutShow>Please Login</ng-template>
