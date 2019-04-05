@@ -8,6 +8,7 @@ import { NgIfExampleComponent } from './ng-if-example/ng-if-example.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 import { NgForComponent } from './ng-for/ng-for.component';
+import { PipeComponent } from './pipe/pipe.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NgForComponent } from './ng-for/ng-for.component';
     NgIfExampleComponent,
     PageNotFoundComponent,
     NgSwitchComponent,
-    NgForComponent
+    NgForComponent,
+    PipeComponent
   ],
   imports: [
     BrowserModule,
