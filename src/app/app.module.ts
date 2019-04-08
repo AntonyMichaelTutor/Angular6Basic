@@ -9,6 +9,11 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 import { NgForComponent } from './ng-for/ng-for.component';
 import { PipeComponent } from './pipe/pipe.component';
+import { CustomPipeComponent } from './custom-pipe/custom-pipe.component';
+import { CustomPipePipe } from './custom-pipe/custom-pipe.pipe';
+import { MulPipePipe } from './custom-pipe/mul-pipe.pipe';
+import { AttributeDirectiveComponent } from './attribute-directive/attribute-directive.component';
+import { ServiceComponent } from './service/service.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +23,12 @@ import { PipeComponent } from './pipe/pipe.component';
     PageNotFoundComponent,
     NgSwitchComponent,
     NgForComponent,
-    PipeComponent
+    PipeComponent,
+    CustomPipeComponent,
+    CustomPipePipe,
+    MulPipePipe,
+    AttributeDirectiveComponent,
+    ServiceComponent
   ],
   imports: [
     BrowserModule,

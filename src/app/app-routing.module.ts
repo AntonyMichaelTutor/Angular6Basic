@@ -6,6 +6,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 import { NgForComponent } from './ng-for/ng-for.component';
 import { PipeComponent } from './pipe/pipe.component';
+import { CustomPipeComponent } from './custom-pipe/custom-pipe.component';
+import { AttributeDirectiveComponent } from './attribute-directive/attribute-directive.component';
+import { ServiceComponent } from './service/service.component';
 
 const routes: Routes = [
                           {path:"BasicExample",component:BasicComponentComponent},
@@ -13,6 +16,9 @@ const routes: Routes = [
                           {path:"NgSwitch",component:NgSwitchComponent},
                           {path:"NgFor",component:NgForComponent},
                           {path:"Pipe",component:PipeComponent},
+                          {path:"CustomPipe",component:CustomPipeComponent},
+                          {path:"AttributeDirective",component:AttributeDirectiveComponent},
+                          {path:"Service",component:ServiceComponent},
                           {path:"**",component:PageNotFoundComponent}
                         ];
 

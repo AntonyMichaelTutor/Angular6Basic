@@ -1,0 +1,5 @@
+<h1>Custom Pipe Example</h1>
+<br><input type="Text" placeholder="value A"[(ngModel)]="input"><br>
+<br><input type="Text" placeholder="value B"[(ngModel)]="input1">
+<p>Add: {{input | add: input1}}</p>
+<p>Mul: {{input | mulPipe: input1}}</p>
